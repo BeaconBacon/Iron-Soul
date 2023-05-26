@@ -64,6 +64,7 @@ class Game:
         title = font.render('GAME OVER', True, (255, 255, 255))
         restart_button = font.render('Press R to Restart', True, (255, 255, 255))
         quit_button = font.render('Press Q to Quit', True, (255, 255, 255))
+        self.screen.fill((0,0,0))
         self.screen.blit(title, (WIDTH / 2 - title.get_width() / 2, HEIGTH / 2 - title.get_height() / 3))
         self.screen.blit(restart_button, (WIDTH / 2 - restart_button.get_width() / 2, HEIGTH / 1.9 + restart_button.get_height()))
         self.screen.blit(quit_button, (WIDTH / 2 - quit_button.get_width() / 2, HEIGTH/ 2 + quit_button.get_height() / 2))
